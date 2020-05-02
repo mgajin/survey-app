@@ -11,7 +11,9 @@ public class Assistant implements Serializable {
     private double averageScore;
     private List<Integer> scores;
 
-    public Assistant() {
+    public Assistant(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
         this.scores = new ArrayList<>();
     }
 
@@ -25,6 +27,14 @@ public class Assistant implements Serializable {
 
     private List<Integer> getScores() {
         return scores;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getSurname() {
+        return this.surname;
     }
 
     @Override
