@@ -1,6 +1,6 @@
 <%-- Created by IntelliJ IDEA. --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:useBean id="database" class="main.java.model.Database" scope="application"/>
+<%--<jsp:useBean id="database" class="main.java.model.Database" scope="application"/>--%>
 <html>
   <head>
     <%--Bootstrap--%>
@@ -8,7 +8,7 @@
     <title>Survey Page</title>
   </head>
   <body>
-  <main class="container border">
+  <main class="container">
     <form action="http://localhost:8080/survey" method="post">
       <div class="form-group">
         <label for="nameInput">Name</label>
@@ -30,7 +30,7 @@
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <a href="http://localhost:8080/results">See ratings</a>
+    <a href="results.jsp">SEE RESULTS</a>
   </main>
 
   </body>
