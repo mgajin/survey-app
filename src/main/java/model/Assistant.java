@@ -17,15 +17,15 @@ public class Assistant implements Serializable {
         this.scores = new ArrayList<>();
     }
 
-    private void setAverageScore(double score) {
+    public void setAverageScore(double score) {
         this.averageScore = score;
     }
 
-    private double getAverageScore() {
+    public double getAverageScore() {
         return averageScore;
     }
 
-    private List<Integer> getScores() {
+    public List<Integer> getScores() {
         return scores;
     }
 

@@ -12,11 +12,11 @@ public class Database implements Serializable {
         this.assistants = new ArrayList<>();
     }
 
-    private List<Assistant> getAssistants() {
+    public List<Assistant> getAssistants() {
         return this.assistants;
     }
 
-    private Assistant getAssistant(String name, String surname) {
+    public Assistant getAssistant(String name, String surname) {
 
         for (Assistant assistant : this.assistants) {
             if (assistant.getName().equals(name) && assistant.getSurname().equals(surname)) {
@@ -25,5 +25,4 @@ public class Database implements Serializable {
         }
         return null;
     }
-
 }

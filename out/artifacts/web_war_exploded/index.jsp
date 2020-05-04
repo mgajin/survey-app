@@ -10,12 +10,16 @@
   <main class="container border">
     <form action="http://localhost:8080/survey" method="post">
       <div class="form-group">
-        <label for="nameInput">Assistant</label>
-        <input type="text" name="assistant" class="form-control" id="nameInput" placeholder="Type assistant's name">
+        <label for="nameInput">Name</label>
+        <input type="text" name="name" class="form-control" id="nameInput" placeholder="Type name">
+      </div>
+      <div class="form-group">
+        <label for="surnameInput">Surname</label>
+        <input type="text" name="surname" class="form-control" id="surnameInput" placeholder="Type surname">
       </div>
       <div class="form-group">
         <label for="selectScore">Select score</label>
-        <select class="form-control" name="score" id="selectScore">
+        <select class="form-control" name="rating" id="selectScore">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -25,7 +29,7 @@
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <a href="http://localhost:8080/survey">See ratings</a>
+    <a href="http://localhost:8080/results">See ratings</a>
   </main>
 
   </body>
