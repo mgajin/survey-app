@@ -1,5 +1,6 @@
 <%-- Created by IntelliJ IDEA. --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:useBean id="database" class="main.java.model.Database" scope="application"/>
 <html>
   <head>
     <%--Bootstrap--%>
